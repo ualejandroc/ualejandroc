@@ -1,0 +1,6 @@
+{
+  "name" : "CRMDB",
+  "type" : "mysql",
+  "useDefault" : true,
+  "properties" : { }
+}

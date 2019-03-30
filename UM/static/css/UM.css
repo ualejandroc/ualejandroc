@@ -1,0 +1,157 @@
+/* Standard browser css override */
+html {
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+  overflow-x: auto;
+  height: 100%
+}
+
+table {
+  empty-cells: show;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+}
+
+body {
+  border: 0px;
+  margin: 0px auto;
+  font-family: Roboto, sans-serif;
+  color: #222222;
+  background-color: #ffffff;
+  height: 100%
+}
+
+.navbar {
+  background-color: #343A54;
+}
+
+.trillo-list-header {
+  background-color: #343A54;
+  color: #fff;
+  border-color: #343A54;
+}
+
+.trillo-list-row {
+  background-color: #fff;
+}
+
+.trillo-list-row.trillo-selected {
+  background-color: #5FC7D2;
+  color: #fff;
+}
+
+.trillo-content-c {
+  height: 50px;
+}
+
+.trillo-list-row.trillo-selected .trillo-content-c {
+  border-color: #fff;
+}
+
+.um-tool-bar {
+  position: fixed;
+  top: 59px;
+  padding: 1rem 1rem;
+  height: 63px;
+  width: 100%
+}
+
+.main-content-area {
+  position: relative;
+  top: 122px;
+  padding: 5px;
+  background-color: #f2f2f2;
+}
+
+.trillo-dt-container {
+  overflow-x: auto;
+  border: 2px solid #ccc;
+  background-color: #fff;
+}
+
+.trillo-table .dt-buttons {
+  text-align: right;
+  display: block;
+}
+
+.trillo-dt-top {
+  display: block;
+  padding: 10px;
+  text-align: right;
+}
+
+.trillo-dt-top .dataTables_length {
+  flex-grow: 1;
+}
+
+.trillo-dt-filter {
+  display: flex;
+  padding: 10px;
+}
+
+.trillo-dt-top .dataTables_length label {
+  line-height: 38px;
+  margin-bottom: 0;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+  margin-bottom: 0;
+  width: 400px;
+  max-width: 60%;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+  flex-grow: 1;
+  text-align: left;
+}
+
+div.dataTables_wrapper div.dataTables_filter label input {
+  margin-left: 0;
+  width: 100%;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+
+}
+
+div.dataTables_wrapper div.dataTables_paginate {
+  padding: 10px;
+}
+
+table.dataTable {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.trillo-selected td {
+  background-color: #343A54;
+  color: #fff;
+}
+
+.main-logo {
+  padding-left: 10px;
+  padding-right: 15px;
+  border-right: 1px solid #ccc;
+}
+
+.main-app-name {
+  font-family: arial;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.main-menu {
+  justify-content: flex-end;
+}
+
+.main-menu.collapse.show,
+.main-menu.collapsing {
+  padding-top: 20px;
+}
+
+.login-menu {
+  right: 0;
+  left: auto;
+}

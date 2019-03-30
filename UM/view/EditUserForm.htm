@@ -1,0 +1,39 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" nm="modalTitle">Edit User</h5>
+    </div>
+    <form>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="userId">User Id</label>
+          <input disabled type="text" class="form-control" nm="userId">
+        </div>
+        <div class="form-group">
+          <label for="roles">Roles</label>
+          <input class="form-control trillo-display-none" nm="roles" data-tokenizer-source="security.roles" data-tokenizer-zindex="2001">
+        </div>
+        <div class="form-group">
+          <label for="groups">Groups</label>
+          <input class="form-control  trillo-display-none" nm="groups" data-tokenizer-source="security.groups" data-tokenizer-zindex="2001">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" class="form-control" data-validation="email" nm="email">
+        </div>
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" class="form-control" nm="firstName">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="form-control" nm="lastName">
+        </div>
+        <div class="trillo-dialog-button-group">
+          <button type="button" nm="close" class="btn btn-primary js-tool">Cancel</button>
+          <button type="submit" nm="ok" class="btn btn-primary js-tool">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

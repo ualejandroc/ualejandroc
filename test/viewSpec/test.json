@@ -1,0 +1,7 @@
+{
+  "name" : "test",
+  "type" : "page",
+  "displayName" : "Left Sidebar",
+  "controller" : "AppC",
+  "cssClass" : "trillo-container trillo-item-design-mode"
+}

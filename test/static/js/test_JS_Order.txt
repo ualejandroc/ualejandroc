@@ -1,0 +1,4 @@
+shared/static/js/shared_ns.js
+shared/static/js/sharedC.js
+shared/static/js/appC.js
+static/js/test_ns.js

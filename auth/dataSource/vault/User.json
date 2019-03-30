@@ -1,0 +1,262 @@
+{
+  "name" : "User",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "indexed" : true,
+      "length" : 19,
+      "nameInDS" : "id",
+      "persistent" : true,
+      "primaryKey" : true,
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "appKey",
+      "type" : "string",
+      "length" : 255,
+      "nameInDS" : "appKey",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "length" : 19,
+      "nameInDS" : "createdAt",
+      "persistent" : true,
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "name",
+      "type" : "string",
+      "length" : 255,
+      "nameInDS" : "name",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "length" : 19,
+      "nameInDS" : "updatedAt",
+      "persistent" : true,
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "email",
+      "type" : "string",
+      "indexed" : true,
+      "length" : 255,
+      "nameInDS" : "email",
+      "persistent" : true,
+      "tenantUnique" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "emailVerified",
+      "type" : "boolean",
+      "length" : 1,
+      "nameInDS" : "emailVerified",
+      "persistent" : true,
+      "typeInDS" : "BIT"
+    },
+    {
+      "name" : "extern_source",
+      "type" : "string",
+      "length" : 255,
+      "nameInDS" : "extern_source",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "firstName",
+      "type" : "string",
+      "length" : 255,
+      "nameInDS" : "firstName",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "lastName",
+      "type" : "string",
+      "length" : 255,
+      "nameInDS" : "lastName",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "orgName",
+      "type" : "string",
+      "indexed" : true,
+      "length" : 64,
+      "nameInDS" : "orgName",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "tenantName",
+      "type" : "string",
+      "length" : 64,
+      "nameInDS" : "tenantName",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "tenantId",
+      "type" : "string",
+      "indexed" : true,
+      "length" : 20,
+      "nameInDS" : "tenantId",
+      "persistent" : true,
+      "tenant" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "role",
+      "type" : "string",
+      "length" : 255,
+      "nameInDS" : "role",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "userId",
+      "type" : "string",
+      "indexed" : true,
+      "length" : 255,
+      "nameInDS" : "userId",
+      "persistent" : true,
+      "tenantUnique" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "emailVerifyKey",
+      "type" : "string",
+      "indexed" : true,
+      "length" : 255,
+      "nameInDS" : "emailVerifyKey",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "password",
+      "type" : "string",
+      "hidden" : true,
+      "length" : 255,
+      "nameInDS" : "password",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "verifyLinkSentAt",
+      "type" : "biginteger",
+      "length" : 19,
+      "nameInDS" : "verifyLinkSentAt",
+      "persistent" : true,
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "history",
+      "type" : "string",
+      "length" : 65535,
+      "nameInDS" : "history",
+      "persistent" : true,
+      "typeInDS" : "TEXT"
+    },
+    {
+      "name" : "lastPage",
+      "type" : "string",
+      "length" : 255,
+      "nameInDS" : "lastPage",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "originalRole",
+      "type" : "string",
+      "length" : 255,
+      "nameInDS" : "originalRole",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "externalId",
+      "type" : "string",
+      "length" : 255,
+      "nameInDS" : "externalId",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "pictureUrl",
+      "type" : "string",
+      "length" : 255,
+      "nameInDS" : "pictureUrl",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "length" : 1,
+      "nameInDS" : "deleted",
+      "persistent" : true,
+      "typeInDS" : "BIT"
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "length" : 19,
+      "nameInDS" : "deletedAt",
+      "persistent" : true,
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "roles",
+      "type" : "string",
+      "length" : 255,
+      "nameInDS" : "roles",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "groups",
+      "type" : "string",
+      "length" : 255,
+      "nameInDS" : "groups",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "lastAccessTS",
+      "type" : "biginteger",
+      "length" : 19,
+      "nameInDS" : "lastAccessTS",
+      "persistent" : true,
+      "defaultValue" : "0",
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "accessCount",
+      "type" : "biginteger",
+      "nameInDS" : "accessCount",
+      "persistent" : true,
+      "defaultValue" : "0",
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "inactive",
+      "type" : "boolean",
+      "nameInDS" : "inactive",
+      "persistent" : true,
+      "defaultValue" : false,
+      "typeInDS" : "BIT"
+    }
+
+  ],
+  "displayName" : "trillo.user_tbl",
+  "nameInDS" : "user_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

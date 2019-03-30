@@ -1,0 +1,14 @@
+{
+"name" : "UpdateContact",
+"type" : "form",
+"dataPath" : "_g.contactTbl__selectedObj",
+"postUrl" : "/ds/save/test/CRMDB/Contact",
+"css" : {
+  "max-width" : "800px",
+  "width" : "80%",
+  "padding" : "20px",
+  "border" : "1px solid rgb(238, 238, 238)",
+  "border-radius" : "5px"
+},
+"cssClass" : "trillo-form"
+}

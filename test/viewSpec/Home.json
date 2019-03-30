@@ -1,0 +1,8 @@
+{
+  "name" : "Home",
+  "type" : "container",
+  "chartSpecs" : [
+    { }
+  ],
+  "cssClass" : "trillo-item-design-mode"
+}

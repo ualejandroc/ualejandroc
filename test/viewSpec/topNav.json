@@ -1,0 +1,12 @@
+{
+  "name" : "topNav",
+  "type" : "html",
+  "actionSpecs" : [
+    {
+      "name" : "myProfile"
+    },
+    {
+      "name" : "_logout"
+    }
+  ]
+}

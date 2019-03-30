@@ -1,0 +1,91 @@
+{
+  "name" : "Client",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "persistent" : true,
+      "primaryKey" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "orgName",
+      "type" : "string",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "client_id",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "client_secret",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "scope",
+      "type" : "longstring",
+      "persistent" : true
+    },
+    {
+      "name" : "authorities",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "authorized_grant_types",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "access_token_validity",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "refresh_token_validity",
+      "type" : "long",
+      "persistent" : true
+    },
+    {
+      "name" : "additional_information",
+      "type" : "longstring",
+      "persistent" : true
+    },
+    {
+      "name" : "resource_ids",
+      "type" : "string",
+      "persistent" : true
+    }
+  ],
+  "displayName" : "Client",
+  "nameInDS" : "client_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

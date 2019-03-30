@@ -1,0 +1,83 @@
+/* --------------------------------------------------------------------------------------------------------- */
+
+.trillo-user-picture {
+  height: 36px;
+  border-radius: 50%;
+  margin: auto;
+  border: 1px solid #eee;
+  background-color: #fff;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+.trillo-dt-container {
+  overflow-x: auto;
+  border: 5px solid #eee;
+}
+
+.trillo-table .dt-buttons {
+  text-align: right;
+  display: block;
+}
+
+.trillo-dt-top {
+  display: block;
+  padding: 10px;
+  text-align: right;
+}
+
+.trillo-dt-top .dataTables_length {
+  flex-grow: 1;
+}
+
+.trillo-dt-filter {
+  display: flex;
+  padding: 10px;
+}
+
+.trillo-dt-top .dataTables_length label {
+  line-height: 38px;
+  margin-bottom: 0;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+  margin-bottom: 0;
+  width: 400px;
+  max-width: 60%;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+  flex-grow: 1;
+  text-align: left;
+}
+
+div.dataTables_wrapper div.dataTables_filter label input {
+  margin-left: 0;
+  width: 100%;
+  border: 1px solid #eee;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+  font-size: 0.75rem;
+}
+
+div.dataTables_wrapper div.dataTables_paginate {
+  padding: 10px;
+  text-align: right;
+}
+
+div.dataTables_wrapper div.dataTables_paginate a {
+  color: #fff;
+  background-color: #868e96;
+  border-color: #868e96;
+  margin: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.76562rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+table.dataTable {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}

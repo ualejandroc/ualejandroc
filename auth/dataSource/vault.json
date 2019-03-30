@@ -1,0 +1,6 @@
+{
+  "name" : "vault",
+  "useDefault" : true,
+  "type" : "mysql",
+  "uid" : "DataSourceM.vault"
+}

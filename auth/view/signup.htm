@@ -1,0 +1,84 @@
+<script spec="view" type="application/json">
+  {
+    "name" : "signup",
+    "displayName" : "Sign Up",
+    "type" : "page",
+    "nextViewName" : "SignupForm",
+    "nextViewSpecs" : [
+      {
+        "name" : "SignupForm",
+        "embedded" : true,
+        "impl" : "Trillo.FormView",
+        "elementSelector" : ".sign-up-form",
+        "postUrl" : "/_preauthsvc/user/signup"
+      }
+    ]
+  }
+</script>
+
+<div class="trillo-root-elem trillo-has-footer">
+  <div class="trillo-auth-application js-application">
+    <!--#include file="authheader.htm" -->
+    <div class="main-content-area auth-page">
+      <div class="trillo-form-container">
+        <div class="trillo-form-container-inner sign-up-form">
+          <h1 class="trillo-form-title">
+            Sign Up
+          </h1>
+          <form>
+            <div class="form-group">
+              <label for="userId">User Id</label>
+              <input type="text" class="form-control" nm="userId" data-validation="length, custom"
+              data-validation-length="2-16" data-validation-regexp="^[$A-Za-z][0-9A-Za-z_$]*$"
+            data-validation-error-msg-custom="User id should start with an alphabet followed by alphanumeric and '_'">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" data-validation="required, email" nm="email">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" nm="password" name="password" data-validation="length" data-validation-length="min6">
+            </div>
+            <div class="form-group">
+              <label for="rptPassword">Repeat Password</label>
+              <input type="password" class="form-control" nm="rptPassword" data-validation="length, confirmation"
+              data-validation-length="min6" data-validation-confirm="password" data-validation-error-msg-confirmation="Passwords do not match">
+            </div>
+            <div class="form-group">
+              <label for="tenantName">Tenant Name</label>
+              <input type="text" class="form-control" nm="tenantName" data-validation="length, custom" data-validation-length="2-16" data-validation-regexp="^$|^[$A-Za-z][0-9A-Za-z_$]*$" data-validation-error-msg-custom="Tenant name should start with an alphabet followed by alphanumeric and '_'">
+            </div>
+            <div class="form-group signup-tou-msg">
+              By clicking Sign Up, you agree to our
+              <a href="https://www.trillo.io/WebSite/Toc">
+                Terms
+              </a>
+              .
+            </div>
+            <div class="form-group">
+              <button tabindex="3" nm="ok" type="submit" class="btn js-tool">Sign Up</button>
+            </div>
+          </form>
+        </div>
+        <div class="sign-up-message trillo-display-none">
+          <div class="card" style="width: 20rem; margin: auto">
+            <div class="card-block">
+              <h4 class="card-title">Signed Up</h4>
+              <p class="card-text">
+                You are successfully signed up.
+                We have sent you an email to verify your email address.
+                Click on the link in email to verify.
+                If you do not find email in the inbox, check the spam folder.
+              </p>
+              <a href="/{{{orgName}}}/auth/login" class="btn btn-primary">Click here to login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--#include file="alert.htm" -->
+  <!--#include file="modal.htm" -->
+  <!--#include file="footer.htm" -->
+</div>

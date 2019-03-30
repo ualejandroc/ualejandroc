@@ -1,0 +1,7 @@
+{
+  "name" : "Calendar",
+  "type" : "page",
+  "displayName" : "Left Sidebar",
+  "controller" : "AppC",
+  "cssClass" : "trillo-container"
+}

@@ -1,0 +1,10 @@
+{
+  "headerImage" : "shared/static/img/1x1.png",
+  "title" : "CardTitle",
+  "content" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+  "items" : [
+    "This is item1",
+    "This is item2",
+    "This is item3"
+  ]
+}

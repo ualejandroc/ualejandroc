@@ -1,0 +1,69 @@
+{
+  "name" : "KeyValue",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "indexed" : true,
+      "length" : 19,
+      "nameInDS" : "id",
+      "persistent" : true,
+      "primaryKey" : true,
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "length" : 19,
+      "nameInDS" : "createdAt",
+      "persistent" : true,
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "length" : 1,
+      "nameInDS" : "deleted",
+      "persistent" : true,
+      "typeInDS" : "BIT"
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "length" : 19,
+      "nameInDS" : "deletedAt",
+      "persistent" : true,
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "length" : 19,
+      "nameInDS" : "updatedAt",
+      "persistent" : true,
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "key",
+      "nameInDS" : "key_c",
+      "type" : "string",
+      "indexed" : true,
+      "length" : 255,
+      "persistent" : true,
+      "typeInDS" : "VARCHAR",
+      "unique" : true
+    },
+    {
+      "name" : "value",
+      "nameInDS" : "value_c",
+      "type" : "string",
+      "length" : 16384,
+      "persistent" : true,
+      "typeInDS" : "TEXT"
+    }
+  ],
+  "displayName" : "trillo.keyvalue_tbl",
+  "nameInDS" : "keyvalue_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

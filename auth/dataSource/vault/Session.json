@@ -1,0 +1,73 @@
+{
+  "name" : "Session",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "persistent" : true,
+      "primaryKey" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "name",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "orgName",
+      "type" : "string",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "sessionKeyName",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "sessionKey",
+      "type" : "string",
+      "length" : 36,
+      "persistent" : true,
+      "unique" : true
+    },
+    {
+      "name" : "actualObjId",
+      "type" : "string",
+      "indexed" : true,
+      "persistent" : true
+    },
+    {
+      "name" : "sessionData",
+      "type" : "longstring",
+      "persistent" : true
+    }
+  ],
+  "nameInDS" : "Session_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

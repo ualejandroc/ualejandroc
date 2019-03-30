@@ -1,0 +1,38 @@
+.navbar-3 .navbar-collapse {
+  position: fixed;
+  left: 0;
+  top: 55px;
+  bottom: 0px;
+  border: 1px solid #eee;
+  width: 0;
+  padding: 16px 0;
+}
+
+.navbar-3 .navbar-collapse.show {
+  width: 250px;
+  transition: width 0.35s ease;
+}
+
+.navbar-3 .collapsing {
+  height: auto !important;
+  width: 0;
+  overflow: hidden;
+  transition: width 0.35s ease;
+}
+
+.navbar-3 .navbar-collapse>* {
+  margin-left: 16px;
+  opacity: 0;
+  width: 0;
+}
+
+.navbar-3 .navbar-collapse.collapsing>* {
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.navbar-3 .navbar-collapse.show>* {
+  opacity: 1;
+  width: auto;
+  transition: opacity 0.25s ease;
+}

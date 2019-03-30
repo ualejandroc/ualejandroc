@@ -1,0 +1,31 @@
+<script spec="view" type="application/json">
+  {
+    "name" : "header",
+    "type" : "menu",
+    "embedded" : true
+  }
+</script>
+<nav nm="header" class="navbar fixed-top navbar-dark">
+  <a href="{{{homeUrl}}}" class="navbar-brand text-white" title="Home" style="flex-grow:1">
+    <img class="main-logo" src="{{{logoStamp}}}">
+    <span class="main-app-name">{{{displayName}}}</span>
+  </a>
+  <div id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+      <li nm="userMenu" class="nav-item dropdown user-dropdown trillo-on-valid-role js-menu">
+        <a href="#" class="nav-link dropdown-toggle js-menu-trigger"
+        data-toggle="dropdown"><i class="fa fa-user" style="margin-right: 0"></i>
+        </a>
+        <div class="login-menu dropdown-menu js-menu-items-c" style="position:absolute">
+          <a class="dropdown-item js-menu-item" nm="myProfile" href="#"
+            title="Click to change profile"> <span
+            class="js-screenname">{{{userFullName}}}</span>
+          </a> <a class="dropdown-item js-menu-item" nm="changeMyPassword"
+            href="#"> Change Password </a> <a
+            class="dropdown-item js-menu-item" nm="_logout"
+            href="#"> Logout </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

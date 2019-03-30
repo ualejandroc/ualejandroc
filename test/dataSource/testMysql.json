@@ -1,0 +1,7 @@
+{
+  "name" : "testMysql",
+  "permitsDBCreate" : true,
+  "type" : "mysql",
+  "uid" : "DataSourceM.testMysql",
+  "useDefault" : true
+}

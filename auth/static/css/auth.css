@@ -1,0 +1,161 @@
+html {
+  height: 100%
+}
+
+table {
+  empty-cells: show;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.bg-dark {
+  background-color: #343A54 !important;
+}
+
+.btn {
+  background-color: #5FC7D2;
+  border-color: #5FC7D2;
+  color: #f2f2f2;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+.main-logo {
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.main-app-name {
+  font-family: arial;
+  font-size: 18px;
+  padding-left: 10px;
+  border-left: 1px solid #ccc;
+}
+
+.main-menu {
+  justify-content: flex-end;
+}
+
+.main-menu.collapse.show,
+.main-menu.collapsing {
+  padding-top: 20px;
+}
+
+.login-menu {
+  right: 0;
+  left: auto;
+}
+
+.footer {
+  background-color: #343A54;
+  padding: 1rem 0;
+  font-size: 0.75rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: #E63C72;
+}
+
+.footer .text-muted {
+  color: #ffffff !important;
+}
+
+.trillo-auth-application {
+  position: relative;
+  padding-top: 100px;
+}
+
+.login-fail-alert {
+  display: none;
+  color: #E63C72;
+}
+
+.login-failed .login-fail-alert {
+  display: block;
+}
+
+.main-content-area.auth-page {
+  padding-top: 0px;
+}
+
+.trillo-root-elem {
+  display: flex;
+  flex-direction: column;
+}
+
+.trillo-form-container-inner {
+  width: 380px;
+  paddin: 20px 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.trillo-form-title {
+  color: #5FC7D2;
+}
+
+.login-box .form-group {
+  margin-top: 2rem;
+}
+
+.sign-up-message, .forgot-password-message, .reset-password-message {
+  font-size: 15px;
+  line-height: 20px;
+  margin: 20px;
+}
+
+.sign-up-message .card, .forgot-password-message .card, .reset-password-message .card, .auth-page .card {
+  padding:20px;
+}
+
+.forgot-password-form, .reset-password-form {
+  padding-bottom: 15px;
+}
+
+.forgot-password-link {
+  font-size: 11px;
+  margin-right: 10px;
+  float: right;
+  color: #E63C72;
+}
+
+.login-box {
+  padding-top: 10px;
+}
+
+.singup-button-container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 380px;
+}
+
+.sign-up-form {
+  padding-bottom: 10px;
+}
+
+.signup-prompt {
+  line-height: 2em;
+  font-size:11px;
+  text-align: center;
+}
+
+.signup-tou-msg {
+  padding: 10px 0px;
+  font-size: 11px;
+}
+
+.redo-fotgot-password {
+  padding: 15px 0px;
+  border-bottom: 1px solid #c2c2c2;
+}
+
+h5 {
+  line-height: 1.3em;
+}

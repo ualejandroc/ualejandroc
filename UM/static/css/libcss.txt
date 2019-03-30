@@ -1,0 +1,9 @@
+/lib/css/bootstrap-4-beta/bootstrap.min.css
+/lib/css/perfect-scrollbar.css
+/lib/loopj-jquery-tokeninput/styles/token-input.css
+/lib/loopj-jquery-tokeninput/styles/token-input-facebook.css
+/lib/css/font-awesome-4.6.3_2/css/font-awesome.css
+https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.css
+/css/2.0/trillo.css
+/css/2.0/trillo-theme.css
+/css/2.0/trillo-bootstrap4.css

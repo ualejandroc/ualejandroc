@@ -1,0 +1,38 @@
+{
+  "name" : "sidebar",
+  "type" : "html",
+  "actionSpecs" : [
+    {
+      "name" : "home_",
+      "type" : "view"
+    },
+    {
+      "name" : "home_",
+      "type" : "view"
+    },
+    {
+      "name" : "home_",
+      "type" : "view"
+    },
+    {
+      "name" : "Contacts",
+      "type" : "view"
+    },
+    {
+      "name" : "EmailTemplates",
+      "type" : "view"
+    },
+    {
+      "name" : "Reports",
+      "type" : "view"
+    },
+    {
+      "name" : "Calendar",
+      "type" : "view"
+    }
+  ],
+  "chartSpecs" : [
+    { }
+  ],
+  "cssClass" : "sidebar has-drop-zone trillo-item-design-mode"
+}

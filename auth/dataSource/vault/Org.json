@@ -1,0 +1,85 @@
+{
+  "name" : "Org",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "indexed" : true,
+      "length" : 19,
+      "nameInDS" : "id",
+      "persistent" : true,
+      "primaryKey" : true,
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "length" : 19,
+      "nameInDS" : "createdAt",
+      "persistent" : true,
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "length" : 1,
+      "nameInDS" : "deleted",
+      "persistent" : true,
+      "typeInDS" : "BIT"
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "length" : 19,
+      "nameInDS" : "deletedAt",
+      "persistent" : true,
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "name",
+      "type" : "string",
+      "indexed" : true,
+      "length" : 255,
+      "nameInDS" : "name",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR",
+      "unique" : true
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "length" : 19,
+      "nameInDS" : "updatedAt",
+      "persistent" : true,
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "authenticationSvcCode",
+      "type" : "integer",
+      "length" : 10,
+      "nameInDS" : "authenticationSvcCode",
+      "persistent" : true,
+      "typeInDS" : "INT"
+    },
+    {
+      "name" : "displayName",
+      "type" : "string",
+      "length" : 255,
+      "nameInDS" : "displayName",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "logoFile",
+      "type" : "string",
+      "length" : 255,
+      "nameInDS" : "logoFile",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    }
+  ],
+  "displayName" : "trillo.org_tbl",
+  "nameInDS" : "org_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

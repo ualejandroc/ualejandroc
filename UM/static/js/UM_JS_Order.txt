@@ -1,0 +1,8 @@
+# shared name space
+shared/static/js/shared_ns.js
+shared/static/js/appC.js
+UM/static/js/UM_ns.js
+# all other .js files in the application directory will be included automatically
+# in order to include .js file in a specific order, list them here in the required order
+# in order to exclude a file end it with dash "-". See example below (line commented out)
+#UM/static/js/abc.c-

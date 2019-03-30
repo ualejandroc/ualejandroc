@@ -1,0 +1,15 @@
+https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css
+https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.8.1/css/perfect-scrollbar.min.css
+https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/theme-default.min.css
+
+# You can comment or uncomment following lines as needed
+https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.1.2/flatpickr.min.css
+#https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/css/lightgallery.min.css
+
+
+# The following CSS are provided by Trillo and used by Trillo JS
+https://www.trillo.io/css/2.0/trillo.css
+https://www.trillo.io//css/2.0/trillo-theme.css
+https://www.trillo.io//css/role.css
+https://www.trillo.io//css/2.0/trillo-bootstrap4.css

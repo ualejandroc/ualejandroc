@@ -1,0 +1,314 @@
+{
+            "name" : "contactsGenerator",
+            "childrenSpecs" : [
+              {
+                "name" : "S",
+                "type" : "start",
+                "testBody" : { },
+                "outputSchema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "status" : {
+                      "type" : "string"
+                    },
+                    "message" : {
+                      "type" : "string"
+                    },
+                    "code" : {
+                      "type" : "number"
+                    },
+                    "_rtag" : {
+                      "type" : "string"
+                    },
+                    "detailMessage" : {
+                      "type" : "string"
+                    },
+                    "success" : {
+                      "type" : "boolean"
+                    },
+                    "failed" : {
+                      "type" : "boolean"
+                    }
+                  }
+                }
+              },
+              {
+                "name" : "repeatActivity1",
+                "type" : "repeatActivity",
+                "displayName" : "repeatActivity1",
+                "childrenSpecs" : [
+                  {
+                    "name" : "repeatStartExp1",
+                    "type" : "repeatStartExp",
+                    "displayName" : "repeatStartExp1",
+                    "expressions" : [
+                      {
+                        "lhs" : "i",
+                        "expression" : "0"
+                      }
+                    ],
+                    "outputSchema" : {
+                      "type" : "object",
+                      "properties" : {
+                        "i" : {
+                          "type" : "number"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "name" : "repeatBranchEntry1",
+                    "type" : "repeatBranchEntry",
+                    "displayName" : "repeatBranchEntry1",
+                    "condition" : "i<20"
+                  },
+                  {
+                    "name" : "activity3",
+                    "type" : "activity",
+                    "displayName" : "activity3",
+                    "activityType" : "script",
+                    "props" : { },
+                    "script" : "import com.github.javafaker.Address;\nimport com.github.javafaker.Company;\nimport com.github.javafaker.Faker;\nimport com.github.javafaker.Name;\nimport java.util.HashMap;\nimport java.util.Locale;\nimport java.util.Map;\n\n  Faker f = new Faker(new Locale(\"en-US\"));\n  String firstName = f.name().firstName();\n  String lastName = f.name().lastName();\n  String fullName = firstName+\" \"+lastName;\n  Address address = f.address();\n\n  String state =f.address().stateAbbr();\n  String zipCode = f.address().zipCodeByState(state);\n\n  Company company=f.company();\n\n  String phoneNumberM = f.numerify(\"(8##) ###-####\");\n  String phoneNumberB = f.numerify(\"(9##) ###-####\");\n\n  Map contact = new HashMap();\n  contact.put(\"addressCountry\", \"US\");\n  contact.put(\"lastName\", lastName);\n  contact.put(\"jobTitle\",company.profession());\n  contact.put(\"addressZipPostalCode\",address.zipCode());\n  contact.put(\"fullName\",firstName+\" \"+lastName);\n  contact.put(\"addressStateProvince\",address.state());\n  contact.put(\"parentCompany\", company.name());\n  contact.put(\"firstName\", firstName);\n  contact.put(\"mobilePhone\",phoneNumberM);\n  contact.put(\"name\",fullName);\n  contact.put(\"addressLine1\",address.streetAddress());\n  contact.put(\"middleName\",\"\");\n  contact.put(\"addressLine2\", \"\");\n  contact.put(\"addressLine3\",\"\");\n  contact.put(\"businessPhone\",phoneNumberB);\n  contact.put(\"email\", f.internet().emailAddress());\n  contact.put(\"addressCity\",address.city());\n\n  contact;",
+                    "outputSchema" : {
+                      "type" : "object",
+                      "properties" : {
+                        "status" : {
+                          "type" : "string"
+                        },
+                        "message" : {
+                          "type" : "string"
+                        },
+                        "code" : {
+                          "type" : "number"
+                        },
+                        "_rtag" : {
+                          "type" : "string"
+                        },
+                        "detailMessage" : {
+                          "type" : "string"
+                        },
+                        "failed" : {
+                          "type" : "boolean"
+                        },
+                        "success" : {
+                          "type" : "boolean"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "name" : "activity1",
+                    "type" : "activity",
+                    "displayName" : "activity1",
+                    "activityType" : "ds",
+                    "apiSpec" : {
+                      "serviceUrl" : "/ds/save/test/CRMDB/Contact",
+                      "method" : "post",
+                      "output" : {
+                        "addressCountry" : "US",
+                        "lastName" : "V",
+                        "jobTitle" : "builder",
+                        "addressZipPostalCode" : "25370-9588",
+                        "fullName" : "Ervin Purdy V",
+                        "addressStateProvince" : "Oregon",
+                        "parentCompany" : "Konopelski, Hane and Stiedemann",
+                        "firstName" : "Ervin",
+                        "mobilePhone" : "703.708.3419",
+                        "name" : "Ervin Purdy V",
+                        "addressLine1" : "115 Onita Mall",
+                        "middleName" : "Purdy",
+                        "addressLine2" : "",
+                        "addressLine3" : "",
+                        "businessPhone" : "561.704.3018",
+                        "email" : "javier.prosacco@gmail.com",
+                        "addressCity" : "West Eura",
+                        "createdAt" : 1549521435015,
+                        "updatedAt" : 1549521435015,
+                        "id" : 22
+                      },
+                      "bodyParamName" : "activity3",
+                      "outputSchema" : {
+                        "type" : "object",
+                        "properties" : {
+                          "addressCountry" : {
+                            "type" : "string"
+                          },
+                          "lastName" : {
+                            "type" : "string"
+                          },
+                          "jobTitle" : {
+                            "type" : "string"
+                          },
+                          "addressZipPostalCode" : {
+                            "type" : "string"
+                          },
+                          "fullName" : {
+                            "type" : "string"
+                          },
+                          "addressStateProvince" : {
+                            "type" : "string"
+                          },
+                          "parentCompany" : {
+                            "type" : "string"
+                          },
+                          "firstName" : {
+                            "type" : "string"
+                          },
+                          "mobilePhone" : {
+                            "type" : "string"
+                          },
+                          "name" : {
+                            "type" : "string"
+                          },
+                          "addressLine1" : {
+                            "type" : "string"
+                          },
+                          "middleName" : {
+                            "type" : "string"
+                          },
+                          "addressLine2" : {
+                            "type" : "string"
+                          },
+                          "addressLine3" : {
+                            "type" : "string"
+                          },
+                          "businessPhone" : {
+                            "type" : "string"
+                          },
+                          "email" : {
+                            "type" : "string"
+                          },
+                          "addressCity" : {
+                            "type" : "string"
+                          },
+                          "createdAt" : {
+                            "type" : "number"
+                          },
+                          "updatedAt" : {
+                            "type" : "number"
+                          },
+                          "id" : {
+                            "type" : "number"
+                          }
+                        }
+                      }
+                    },
+                    "outputSchema" : {
+                      "type" : "object",
+                      "properties" : {
+                        "addressCountry" : {
+                          "type" : "string"
+                        },
+                        "lastName" : {
+                          "type" : "string"
+                        },
+                        "jobTitle" : {
+                          "type" : "string"
+                        },
+                        "addressZipPostalCode" : {
+                          "type" : "string"
+                        },
+                        "fullName" : {
+                          "type" : "string"
+                        },
+                        "addressStateProvince" : {
+                          "type" : "string"
+                        },
+                        "parentCompany" : {
+                          "type" : "string"
+                        },
+                        "firstName" : {
+                          "type" : "string"
+                        },
+                        "mobilePhone" : {
+                          "type" : "string"
+                        },
+                        "name" : {
+                          "type" : "string"
+                        },
+                        "addressLine1" : {
+                          "type" : "string"
+                        },
+                        "middleName" : {
+                          "type" : "string"
+                        },
+                        "addressLine2" : {
+                          "type" : "string"
+                        },
+                        "addressLine3" : {
+                          "type" : "string"
+                        },
+                        "businessPhone" : {
+                          "type" : "string"
+                        },
+                        "email" : {
+                          "type" : "string"
+                        },
+                        "addressCity" : {
+                          "type" : "string"
+                        },
+                        "createdAt" : {
+                          "type" : "number"
+                        },
+                        "updatedAt" : {
+                          "type" : "number"
+                        },
+                        "id" : {
+                          "type" : "number"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "name" : "repeatEndExp1",
+                    "type" : "repeatEndExp",
+                    "displayName" : "repeatEndExp1",
+                    "expressions" : [
+                      {
+                        "lhs" : "i",
+                        "expression" : "i+1"
+                      }
+                    ],
+                    "outputSchema" : {
+                      "type" : "object",
+                      "properties" : {
+                        "i" : {
+                          "type" : "number"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "name" : "E",
+                "type" : "end",
+                "outputSchema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "status" : {
+                      "type" : "string"
+                    },
+                    "message" : {
+                      "type" : "string"
+                    },
+                    "code" : {
+                      "type" : "number"
+                    },
+                    "_rtag" : {
+                      "type" : "string"
+                    },
+                    "detailMessage" : {
+                      "type" : "string"
+                    },
+                    "success" : {
+                      "type" : "boolean"
+                    },
+                    "failed" : {
+                      "type" : "boolean"
+                    }
+                  }
+                }
+              }
+            ]
+          }

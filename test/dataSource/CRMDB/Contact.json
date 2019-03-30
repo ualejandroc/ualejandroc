@@ -1,0 +1,131 @@
+{
+  "name" : "Contact",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "persistent" : true,
+      "primaryKey" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "name",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "orgName",
+      "type" : "string",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "persistent" : true,
+      "systemAttr" : true
+    },
+    {
+      "name" : "fullName",
+      "type" : "string",
+      "persistent" : false
+    },
+    {
+      "name" : "firstName",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "middleName",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "lastName",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "parentCompany",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "addressCountry",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "addressStateProvince",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "addressCity",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "addressLine1",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "addressLine2",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "addressLine3",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "addressZipPostalCode",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "businessPhone",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "mobilePhone",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "email",
+      "type" : "string",
+      "persistent" : true
+    },
+    {
+      "name" : "jobTitle",
+      "type" : "string",
+      "persistent" : true
+    }
+  ],
+  "displayName" : "Contact",
+  "nameInDS" : "Contact_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

@@ -1,0 +1,5 @@
+{
+  "name" : "authheader",
+  "type" : "html",
+  "cssClass" : "navbar navbar-expand-md navbar-inverse bg-dark fixed-top"
+}

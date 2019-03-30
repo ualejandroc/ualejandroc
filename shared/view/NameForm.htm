@@ -1,0 +1,28 @@
+<script spec="view" type="application/json">
+  {
+    "name" : "NameForm",
+    "type" : "form",
+    "impl" : "Trillo.FormView",
+    "container" : "trillo-dialog-container"
+  }
+</script>
+
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" nm="modalTitle">{{{title}}}</h5>
+    </div>
+    <form>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" data-validation="required" nm="name">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" nm="close" class="btn btn-secondary js-tool">Cancel</button>
+        <button type="submit" nm="ok" class="btn btn-primary js-tool">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+{
+  "name" : "contactTbl",
+  "type" : "dataTable",
+  "apiSpec" : {
+    "serviceUrl" : "/ds/page/test/CRMDB/Contact",
+    "body" : {
+      "size" : 10000,
+      "start" : 1
+    },
+    "method" : "post"
+  },
+  "actionSpecs" : [
+    {
+      "name" : "new",
+      "type" : "dialogView",
+      "viewName" : "NewContact",
+      "viewType" : "form"
+    },
+    {
+      "name" : "edit",
+      "type" : "dialogView",
+      "viewName" : "UpdateContact",
+      "viewType" : "form"
+    }
+  ],
+  "cssClass" : "trillo-table material-datatables trillo-item-design-mode"
+}

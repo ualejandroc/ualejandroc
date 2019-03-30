@@ -1,0 +1,147 @@
+{
+  "name" : "Doc",
+  "attributes" : [
+    {
+      "name" : "id",
+      "type" : "biginteger",
+      "nameInDS" : "id",
+      "persistent" : true,
+      "primaryKey" : true,
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "orgId",
+      "type" : "biginteger",
+      "nameInDS" : "orgId",
+      "persistent" : true,
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "appKey",
+      "type" : "string",
+      "nameInDS" : "appKey",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "createdAt",
+      "type" : "biginteger",
+      "nameInDS" : "createdAt",
+      "persistent" : true,
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "name",
+      "type" : "string",
+      "nameInDS" : "name",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "updatedAt",
+      "type" : "biginteger",
+      "nameInDS" : "updatedAt",
+      "persistent" : true,
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "appName",
+      "type" : "string",
+      "nameInDS" : "appName",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "authors",
+      "type" : "string",
+      "nameInDS" : "authors",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "comments",
+      "type" : "integer",
+      "nameInDS" : "comments",
+      "persistent" : true,
+      "typeInDS" : "INT"
+    },
+    {
+      "name" : "deleted",
+      "type" : "boolean",
+      "nameInDS" : "deleted",
+      "persistent" : true,
+      "typeInDS" : "BIT"
+    },
+    {
+      "name" : "deletedAt",
+      "type" : "biginteger",
+      "length" : 19,
+      "nameInDS" : "deletedAt",
+      "persistent" : true,
+      "typeInDS" : "BIGINT"
+    },
+    {
+      "name" : "description",
+      "type" : "string",
+      "nameInDS" : "description",
+      "persistent" : true,
+      "typeInDS" : "TEXT"
+    },
+    {
+      "name" : "displayName",
+      "type" : "string",
+      "nameInDS" : "displayName",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "orgName",
+      "type" : "string",
+      "nameInDS" : "orgName",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "parentUid",
+      "type" : "string",
+      "nameInDS" : "parentUid",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "published",
+      "type" : "boolean",
+      "nameInDS" : "published",
+      "persistent" : true,
+      "typeInDS" : "BIT"
+    },
+    {
+      "name" : "tags",
+      "type" : "string",
+      "nameInDS" : "tags",
+      "persistent" : true,
+      "typeInDS" : "VARCHAR"
+    },
+    {
+      "name" : "visibility",
+      "type" : "integer",
+      "nameInDS" : "visibility",
+      "persistent" : true,
+      "typeInDS" : "INT"
+    },
+    {
+      "name" : "tenantId",
+      "type" : "string",
+      "indexed" : true,
+      "length" : 20,
+      "nameInDS" : "tenantId",
+      "persistent" : true,
+      "tenant" : true,
+      "typeInDS" : "VARCHAR"
+    }
+  ],
+  "displayName" : "Doc",
+  "nameInDS" : "doc_tbl",
+  "primaryKeyGenerator" : "serial",
+  "tableCreateable" : true
+}

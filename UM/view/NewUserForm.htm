@@ -1,0 +1,52 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" nm="modalTitle">Edit User</h5>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <label for="userId">User Id</label> <input type="text" class="form-control" nm="userId" data-validation="length, custom"
+            data-validation-length="2-16" data-validation-regexp="^[$A-Za-z][0-9A-Za-z_$]*$"
+            data-validation-error-msg-custom="User id should start with an alphabet followed by alphanumeric and '_'">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label> <input type="password" class="form-control" nm="password" name="password"
+            data-validation="length" data-validation-length="min6">
+        </div>
+        <div class="form-group">
+          <label for="rptPassword">Repeat Password</label>
+          <input type="password" class="form-control" nm="rptPassword" data-validation="length, confirmation"
+          data-validation-length="min6" data-validation-confirm="password" data-validation-error-msg-confirmation="Passwords do not match">
+        </div>
+        <div class="form-group">
+          <label for="role">Role</label>
+          <select class="form-control" nm="role">
+            <option value="user">
+              User
+            </option>
+            <option value="admin">
+              Admin
+            </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" class="form-control" data-validation="email" nm="email">
+        </div>
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" class="form-control" nm="firstName">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="form-control" nm="lastName">
+        </div>
+        <div class="trillo-dialog-button-group">
+          <button type="button" nm="close" class="btn btn-primary js-tool">Cancel</button>
+          <button type="submit" nm="ok" class="btn btn-primary js-tool">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
